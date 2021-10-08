@@ -15,7 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from home.urls import home_urls
+from accounting.urls import accounting_urls
+from doctor.urls import doctor_urls
+from nurse.urls import nurse_urls
+from pharmacy.urls import pharmacy_urls
+from reception.urls import reception_urls
+from administrator.urls import administrator_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+urlpatterns += home_urls + accounting_urls + doctor_urls + nurse_urls
+
+urlpatterns += pharmacy_urls + reception_urls + administrator_urls
