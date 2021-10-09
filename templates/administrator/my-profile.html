@@ -1,4 +1,4 @@
-{% extends 'hr/base.html' %} {% block title %}
+{% extends 'administrator/base.html' %} {% block title %}
 <title>
     Sample homepage
 </title>
@@ -6,11 +6,11 @@
 {% endblock %} {% block content %}
 
 <!-- Sidenav -->
-{% include 'hr/nav-bar.html' %}
+{% include 'administrator/nav-bar.html' %}
 <!-- Main content -->
 <div class="main-content" id="panel">
     <!-- Topnav -->
-    {% include 'hr/top-nav-bar.html' %}
+    {% include 'administrator/top-nav-bar.html' %}
     <!-- Header -->
     <!-- Header -->
     <div class="header pb-6">
@@ -21,15 +21,15 @@
                         <h6 class="h2 d-inline-block mb-0">My profile</h6>
                         <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                             <ol class="breadcrumb breadcrumb-links">
-                                <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i></a></li>
-                                <li class="breadcrumb-item"><a href="/">Dashboards</a></li>
+                                <li class="breadcrumb-item"><a administratoref="/"><i class="fas fa-home"></i></a></li>
+                                <li class="breadcrumb-item"><a administratoref="/">Dashboards</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">My profile</li>
                             </ol>
                         </nav>
                     </div>
                     <div class="col-lg-6 col-5 text-right">
-                        <a href="#" class="btn btn-sm btn-neutral">New</a>
-                        <a href="#" class="btn btn-sm btn-neutral">Filters</a>
+                        <a administratoref="#" class="btn btn-sm btn-neutral">New</a>
+                        <a administratoref="#" class="btn btn-sm btn-neutral">Filters</a>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-3 order-lg-2">
                             <div class="card-profile-image">
-                                <a href="#">
+                                <a administratoref="#">
                                     <img src="{{request.user.get_avatar_url}}" class="rounded-circle">
                                 </a>
                             </div>
@@ -67,8 +67,8 @@
                     </div>
                     <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
                         <div class="d-flex justify-content-between">
-                            <a href="#" class="btn btn-sm btn-info  mr-4 ">Change background</a>
-                            <a href="#" class="btn btn-sm btn-default float-right">Change avatar</a>
+                            <a administratoref="#" class="btn btn-sm btn-info  mr-4 ">Change background</a>
+                            <a administratoref="#" class="btn btn-sm btn-default float-right">Change avatar</a>
                         </div>
                     </div>
                     <div class="card-body pt-0">
@@ -114,7 +114,7 @@
                                 <h3 class="mb-0">Edit profile </h3>
                             </div>
                             <div class="col-4 text-right">
-                                <a href="#!" class="btn btn-sm btn-primary">Settings</a>
+                                <a administratoref="#!" class="btn btn-sm btn-primary">Settings</a>
                             </div>
                         </div>
                     </div>
@@ -151,7 +151,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <hr class="my-4" />
+                            <administrator class="my-4" />
                             <!-- Address -->
                             <h6 class="heading-small text-muted mb-4">Contact information</h6>
                             <div class="pl-lg-4">
@@ -184,7 +184,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <hr class="my-4" />
+                            <administrator class="my-4" />
                             <!-- Description -->
                             <h6 class="heading-small text-muted mb-4">About me</h6>
                             <div class="pl-lg-4">
@@ -201,8 +201,8 @@
             </div>
         </div>
         <!-- Footer -->
-        {% include 'hr/footer.html' %}
+        {% include 'administrator/footer.html' %}
     </div>
 </div>
 <!-- Argon Scripts -->
-{% include 'hr/footer-script.html' %} {% endblock %}
+{% include 'administrator/footer-script.html' %} {% endblock %}

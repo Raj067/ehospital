@@ -1,4 +1,4 @@
-{% extends 'doctor/base.html' %} {% block title %}
+{% extends 'administrator/base.html' %} {% block title %}
 <title>
     Sample homepage
 </title>
@@ -6,11 +6,11 @@
 {% endblock %} {% block content %}
 
 <!-- Sidenav -->
-{% include 'doctor/nav-bar.html' %}
+{% include 'administrator/nav-bar.html' %}
 <!-- Main content -->
 <div class="main-content" id="panel">
     <!-- Topnav -->
-    {% include 'doctor/top-nav-bar.html' %}
+    {% include 'administrator/top-nav-bar.html' %}
     <!-- Header -->
     <!-- Header -->
     <div class="header pb-6">
@@ -114,8 +114,8 @@
             </div>
         </div>
         <!-- Footer -->
-        {% include 'doctor/footer.html' %}
+        {% include 'administrator/footer.html' %}
     </div>
 </div>
 <!-- Argon Scripts -->
-{% include 'doctor/footer-script.html' %} {% endblock %}
+{% include 'administrator/footer-script.html' %} {% endblock %}

@@ -1,0 +1,336 @@
+{% extends 'administrator/base.html' %} {% block title %}
+<title>
+    Sample homepage
+</title>
+
+{% endblock %} {% block content %}
+
+<!-- Sidenav -->
+{% include 'administrator/nav-bar.html' %}
+<!-- Main content -->
+<div class="main-content" id="panel">
+    <!-- Topnav -->
+    {% include 'administrator/top-nav-bar.html' %}
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header pb-6">
+        <div class="container-fluid">
+            <div class="header-body">
+                <div class="row align-items-center py-4">
+                    <div class="col-lg-6 col-7">
+                        <h6 class="h2 d-inline-block mb-0">Medication Request</h6>
+                        <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                            <ol class="breadcrumb breadcrumb-links">
+                                <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="/">Dashboards</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Medication Request</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- <div class="col-lg-6 col-5 text-right">
+                        <a href="#" class="btn btn-sm btn-neutral">New</a>
+                        <a href="#" class="btn btn-sm btn-neutral">Filters</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+        <div class="overflow-auto">
+            <div id="ember9022" class="panel panel-primary ember-view">
+                <table class="table">
+                    <tr class="table-header">
+                        <th>Date</th>
+                        <th>Patient</th>
+                        <th>Prescriber</th>
+                        <th>Medication</th>
+                        <th>Quantity</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9027="9027">
+                        <td>4/12/2020 10:00 AM</td>
+                        <td>Dannyela Vlahos</td>
+                        <td>administrator</td>
+                        <td>Cetirizine</td>
+                        <td>9</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9028="9028">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9030="9030">
+                        <td>4/9/2020 10:00 AM</td>
+                        <td>Katja Daub</td>
+                        <td>administrator</td>
+                        <td>Sertraline</td>
+                        <td>14</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9031="9031">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9033="9033">
+                        <td>4/18/2020 1:00 AM</td>
+                        <td>Hebah Chittenden</td>
+                        <td>administrator</td>
+                        <td>Drospirenone / ethinyl estradiol</td>
+                        <td>17</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9034="9034">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9036="9036">
+                        <td>3/31/2020 1:00 AM</td>
+                        <td>Sonali Kumar Bande</td>
+                        <td>administrator</td>
+                        <td>Terbutaline</td>
+                        <td>8</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9037="9037">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9039="9039">
+                        <td>4/21/2020 1:00 AM</td>
+                        <td>Da'Jour Montroy</td>
+                        <td>administrator</td>
+                        <td>Sertraline</td>
+                        <td>15</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9040="9040">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9042="9042">
+                        <td>3/21/2020 2:00 AM</td>
+                        <td>Ria Kotas</td>
+                        <td>administrator</td>
+                        <td>Nasacort</td>
+                        <td>7</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9043="9043">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9045="9045">
+                        <td>3/21/2020 2:00 AM</td>
+                        <td>Johndaniel Sabogal</td>
+                        <td>administrator</td>
+                        <td>Levonorgestrel</td>
+                        <td>17</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9046="9046">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9048="9048">
+                        <td>5/5/2020 1:00 AM</td>
+                        <td>Delcie Rorabaugh</td>
+                        <td>administrator</td>
+                        <td>Venlafaxine</td>
+                        <td>9</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9049="9049">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9051="9051">
+                        <td>3/23/2020 2:00 AM</td>
+                        <td>Elody Schaumberg</td>
+                        <td>administrator</td>
+                        <td>Sertraline</td>
+                        <td>13</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9052="9052">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9054="9054">
+                        <td>4/30/2020 1:00 AM</td>
+                        <td>Alving Jardon</td>
+                        <td>administrator</td>
+                        <td>Milnacipran</td>
+                        <td>16</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9055="9055">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9057="9057">
+                        <td>4/6/2020 1:00 AM</td>
+                        <td>Jahmiah Sins</td>
+                        <td>administrator</td>
+                        <td>Ethinyl estradiol / levonorgestrel</td>
+                        <td>13</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9058="9058">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9060="9060">
+                        <td>3/26/2020 2:00 AM</td>
+                        <td>Phelan Brandvold</td>
+                        <td>administrator</td>
+                        <td>Implanon</td>
+                        <td>10</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9061="9061">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9063="9063">
+                        <td>4/1/2020 1:00 AM</td>
+                        <td>Pradley Mazmanian</td>
+                        <td>administrator</td>
+                        <td>Sertraline</td>
+                        <td>6</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9064="9064">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9066="9066">
+                        <td>4/17/2020 1:00 AM</td>
+                        <td>Faez Vasques</td>
+                        <td>administrator</td>
+                        <td>Trazodone</td>
+                        <td>9</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9067="9067">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9069="9069">
+                        <td>5/3/2020 1:00 AM</td>
+                        <td>Jobe Meins</td>
+                        <td>administrator</td>
+                        <td>Amitriptyline</td>
+                        <td>16</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9070="9070">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9072="9072">
+                        <td>4/27/2020 1:00 AM</td>
+                        <td>Mohamado Birkland</td>
+                        <td>administrator</td>
+                        <td>Sertraline</td>
+                        <td>12</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9073="9073">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9075="9075">
+                        <td>4/15/2020 1:00 AM</td>
+                        <td>A'Hmir Bedolla</td>
+                        <td>administrator</td>
+                        <td>Dulaglutide</td>
+                        <td>8</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9076="9076">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9078="9078">
+                        <td>3/26/2020 2:00 AM</td>
+                        <td>Aneudys Kubis</td>
+                        <td>administrator</td>
+                        <td>Nitrofurantoin</td>
+                        <td>9</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9079="9079">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9081="9081">
+                        <td>4/28/2020 1:00 AM</td>
+                        <td>Chalet' Duro</td>
+                        <td>administrator</td>
+                        <td>Levonorgestrel</td>
+                        <td>9</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9082="9082">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9084="9084">
+                        <td>3/30/2020 1:00 AM</td>
+                        <td>Petronila Rados</td>
+                        <td>administrator</td>
+                        <td>Atorvastatin</td>
+                        <td>6</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9085="9085">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9087="9087">
+                        <td>5/4/2020 1:00 AM</td>
+                        <td>Jonathon Rosica</td>
+                        <td>administrator</td>
+                        <td>Ethinyl estradiol / norelgestromin</td>
+                        <td>12</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9088="9088">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9090="9090">
+                        <td>5/1/2020 1:00 AM</td>
+                        <td>Sherlynne Loehr</td>
+                        <td>administrator</td>
+                        <td>Varenicline</td>
+                        <td>16</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9091="9091">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9093="9093">
+                        <td>4/28/2020 1:00 AM</td>
+                        <td>Nassi Haacke</td>
+                        <td>administrator</td>
+                        <td>Lyrica</td>
+                        <td>13</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9094="9094">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9096="9096">
+                        <td>3/20/2020 2:00 AM</td>
+                        <td>Wendolis Fruehauf</td>
+                        <td>administrator</td>
+                        <td>Votrient</td>
+                        <td>16</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9097="9097">Fulfill</button>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9099="9099">
+                        <td>5/1/2020 1:00 AM</td>
+                        <td>Telly Kearl</td>
+                        <td>administrator</td>
+                        <td>Rosuvastatin</td>
+                        <td>11</td>
+                        <td>Requested</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-9100="9100">Fulfill</button>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <!-- Footer -->
+        {% include 'administrator/footer.html' %}
+    </div>
+</div>
+<!-- Argon Scripts -->
+{% include 'administrator/footer-script.html' %} {% endblock %}

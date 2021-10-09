@@ -1,0 +1,287 @@
+{% extends 'administrator/base.html' %} {% block title %}
+<title>
+    Sample homepage
+</title>
+
+{% endblock %} {% block content %}
+
+<!-- Sidenav -->
+{% include 'administrator/nav-bar.html' %}
+<!-- Main content -->
+<div class="main-content" id="panel">
+    <!-- Topnav -->
+    {% include 'administrator/top-nav-bar.html' %}
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header pb-6">
+        <div class="container-fluid">
+            <div class="header-body">
+                <div class="row align-items-center py-4">
+                    <div class="col-lg-6 col-7">
+                        <h6 class="h2 d-inline-block mb-0">Complaints</h6>
+                        <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                            <ol class="breadcrumb breadcrumb-links">
+                                <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="/">Dashboards</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Complaints</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-lg-6 col-5 text-right">
+                        <a href="#" class="btn btn-sm btn-neutral">New</a>
+                        <a href="#" class="btn btn-sm btn-neutral">Filters</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+        <div class="overflow-auto">
+            <div id="ember9215" class="panel panel-primary ember-view">
+                <table class="table">
+                    <tr class="table-header">
+                        <th>Date</th>
+                        <th>Patient</th>
+                        <th>Prescriber</th>
+                        <th>Medication</th>
+                        <th>Quantity</th>
+                        <th>Status</th>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9220="9220">
+                        <td>10/8/2019 7:00 AM</td>
+                        <td>rio rao Lim</td>
+                        <td>administrator</td>
+                        <td>Cefazolin 500mg vial (Hazolin)</td>
+                        <td>1</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9222="9222">
+                        <td>10/9/2019 7:00 AM</td>
+                        <td>Shreenidhi Ashok Patil</td>
+                        <td>administrator</td>
+                        <td>Cefazolin 500mg vial (Hazolin)</td>
+                        <td>1</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9224="9224">
+                        <td>10/9/2019 7:00 AM</td>
+                        <td>Shreenidhi Ashok Patil</td>
+                        <td>Pharmacist</td>
+                        <td>Cefazolin 500mg vial (Hazolin)</td>
+                        <td>0</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9226="9226">
+                        <td>10/8/2019 7:00 PM</td>
+                        <td></td>
+                        <td>Hospital Admin</td>
+                        <td>Cefazolin 500mg vial (Hazolin)</td>
+                        <td>5</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9228="9228">
+                        <td>10/11/2019 1:00 AM</td>
+                        <td>Susmita Bhaskar Dhende</td>
+                        <td>administrator</td>
+                        <td>Cefazolin 500mg vial (Hazolin)</td>
+                        <td>1</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9230="9230">
+                        <td>10/11/2019 2:00 AM</td>
+                        <td>ABA Ngwa</td>
+                        <td>Pharmacist</td>
+                        <td>Artecom</td>
+                        <td>2</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9232="9232">
+                        <td>10/14/2019 2:00 AM</td>
+                        <td>rio rao Lim</td>
+                        <td>Hospital Admin</td>
+                        <td>Cefazolin 500mg vial (Hazolin)</td>
+                        <td>2</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9234="9234">
+                        <td>10/14/2019 1:00 AM</td>
+                        <td>rio rao Lim</td>
+                        <td>administrator</td>
+                        <td>Cefazolin 500mg vial (Hazolin)</td>
+                        <td>15</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9236="9236">
+                        <td>10/14/2019 10:00 AM</td>
+                        <td>Juan Dela Cruz</td>
+                        <td>administrator</td>
+                        <td>Cefazolin 500mg vial (Hazolin)</td>
+                        <td>5</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9238="9238">
+                        <td>10/15/2019 9:30 PM</td>
+                        <td>ABA Ngwa</td>
+                        <td>administrator</td>
+                        <td>Cefazolin 500mg vial (Hazolin)</td>
+                        <td>1</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9240="9240">
+                        <td>10/16/2019 12:00 AM</td>
+                        <td>Saudadea Silva Bento</td>
+                        <td>administrator</td>
+                        <td>Midazolam</td>
+                        <td>1</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9242="9242">
+                        <td>10/17/2019 2:00 AM</td>
+                        <td>Juan Dela Cruz</td>
+                        <td>administrator</td>
+                        <td>Cefazolin 500mg vial (Hazolin)</td>
+                        <td>3</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9244="9244">
+                        <td>10/18/2019 2:00 AM</td>
+                        <td>Daniel Weiss</td>
+                        <td>administrator</td>
+                        <td>Cefazolin 500mg vial (Hazolin)</td>
+                        <td>3</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9246="9246">
+                        <td>10/20/2019 10:30 PM</td>
+                        <td>ravi s</td>
+                        <td>administrator</td>
+                        <td>Artecom</td>
+                        <td>1</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9248="9248">
+                        <td>10/20/2019 2:00 AM</td>
+                        <td></td>
+                        <td>hradmin</td>
+                        <td>Artecom</td>
+                        <td>1</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9250="9250">
+                        <td>10/25/2019 9:30 PM</td>
+                        <td>rahul bai</td>
+                        <td>Pharmacist</td>
+                        <td>Reg Non member</td>
+                        <td>1</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9252="9252">
+                        <td>10/26/2019 8:00 AM</td>
+                        <td>Angel Locsin</td>
+                        <td>administrator</td>
+                        <td>Reg Non member</td>
+                        <td>2</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9254="9254">
+                        <td>10/26/2019 8:00 PM</td>
+                        <td>rahul bai</td>
+                        <td>administrator</td>
+                        <td>Cefazolin 500mg vial (Hazolin)</td>
+                        <td>34</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9256="9256">
+                        <td>10/27/2019 9:30 PM</td>
+                        <td>Sonia Elisa Guedes</td>
+                        <td>administrator</td>
+                        <td>Cefazolin 500mg vial (Hazolin)</td>
+                        <td>1</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9258="9258">
+                        <td>11/4/2019 1:00 AM</td>
+                        <td>Sonia Elisa Guedes</td>
+                        <td>Pharmacist</td>
+                        <td>Allegra</td>
+                        <td>1</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9260="9260">
+                        <td>11/4/2019 2:00 AM</td>
+                        <td>John Malho</td>
+                        <td>Hospital Admin</td>
+                        <td>Cefazolin 500mg vial (Hazolin)</td>
+                        <td>24</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9262="9262">
+                        <td>11/3/2019 3:00 AM</td>
+                        <td>John Malho</td>
+                        <td>Hospital Admin</td>
+                        <td>Cefazolin 500mg vial (Hazolin)</td>
+                        <td>20</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9264="9264">
+                        <td>11/9/2019 3:00 AM</td>
+                        <td>Tim tet</td>
+                        <td>administrator</td>
+                        <td>Cefazolin 500mg vial (Hazolin)</td>
+                        <td>10</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9266="9266">
+                        <td>11/13/2019 12:00 AM</td>
+                        <td>Tesy 123123123 test</td>
+                        <td>Pharmacist</td>
+                        <td>Reg Non member</td>
+                        <td>3</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-9268="9268">
+                        <td>11/9/2019 3:00 AM</td>
+                        <td>rio rao Lim</td>
+                        <td>Hospital Admin</td>
+                        <td>dev_med</td>
+                        <td>30</td>
+                        <td>Fulfilled</td>
+                        <!---->
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+        <!-- Footer -->
+        {% include 'administrator/footer.html' %}
+    </div>
+</div>
+<!-- Argon Scripts -->
+{% include 'administrator/footer-script.html' %} {% endblock %}

@@ -1,0 +1,303 @@
+{% extends 'administrator/base.html' %} {% block title %}
+<title>
+    Sample homepage
+</title>
+
+{% endblock %} {% block content %}
+
+<!-- Sidenav -->
+{% include 'administrator/nav-bar.html' %}
+<!-- Main content -->
+<div class="main-content" id="panel">
+    <!-- Topnav -->
+    {% include 'administrator/top-nav-bar.html' %}
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header pb-6">
+        <div class="container-fluid">
+            <div class="header-body">
+                <div class="row align-items-center py-4">
+                    <div class="col-lg-6 col-7">
+                        <h6 class="h2 d-inline-block mb-0">Invoice</h6>
+                        <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                            <ol class="breadcrumb breadcrumb-links">
+                                <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="/">Dashboards</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Invoice</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- <div class="col-lg-6 col-5 text-right">
+                        <a href="#" class="btn btn-sm btn-neutral">New</a>
+                        <a href="#" class="btn btn-sm btn-neutral">Filters</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+        <div class="panel-body">
+            <div id="ember4005" class="panel panel-primary ember-view">
+                <div id="ember4006" class="paging-buttons ember-view">
+                    <!---->
+                </div>
+                <table class="table">
+                    <tr class="table-header">
+                        <th>Number</th>
+                        <th>Bill Date</th>
+                        <th>Status</th>
+                        <th>Patient</th>
+                        <th>Total</th>
+                        <th>Balance Due</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4007="4007">
+                        <td class="invoice-number">inv01332</td>
+                        <td>4/27/2021</td>
+                        <td>Paid</td>
+                        <td>Rose Domingo Asuncion - P03092 <br></td>
+                        <td>2846</td>
+                        <td>300</td>
+                        <td>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4008="4008">
+                        <td class="invoice-number">inv01368</td>
+                        <td>5/1/2021</td>
+                        <td>Paid</td>
+                        <td>Ace Portgas - P03209 <br></td>
+                        <td>1400</td>
+                        <td>200</td>
+                        <td>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4009="4009">
+                        <td class="invoice-number">inv01400</td>
+                        <td>5/2/2021</td>
+                        <td>Paid</td>
+                        <td>Juan Tamad - P03269 <br></td>
+                        <td>300</td>
+                        <td>204</td>
+                        <td>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4010="4010">
+                        <td class="invoice-number">inv01443</td>
+                        <td>5/3/2021</td>
+                        <td>Paid</td>
+                        <td>Harry Edward Styles - P03325 <br></td>
+                        <td>4000</td>
+                        <td>1000</td>
+                        <td>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4011="4011">
+                        <td class="invoice-number">inv01435</td>
+                        <td>5/6/2021</td>
+                        <td>Paid</td>
+                        <td>Avrielle Fernandez Juarez - P03311 <br></td>
+                        <td>312</td>
+                        <td>84</td>
+                        <td>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4012="4012">
+                        <td class="invoice-number">inv01406</td>
+                        <td>5/19/2021</td>
+                        <td>Paid</td>
+                        <td>Hanah Reyes - P03224 <br></td>
+                        <td>4000</td>
+                        <td>900</td>
+                        <td>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4013="4013">
+                        <td class="invoice-number">inv01407</td>
+                        <td>5/19/2021</td>
+                        <td>Paid</td>
+                        <td>Ariana Reyes - P03220 <br></td>
+                        <td>100</td>
+                        <td>30</td>
+                        <td>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4014="4014">
+                        <td class="invoice-number">inv01498</td>
+                        <td>5/22/2021</td>
+                        <td>Paid</td>
+                        <td>Test Patient - P00323 <br></td>
+                        <td>90</td>
+                        <td>80</td>
+                        <td>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4015="4015">
+                        <td class="invoice-number">inv01502</td>
+                        <td>5/25/2021</td>
+                        <td>Paid</td>
+                        <td>Roberto Nanaso Kamble - 2000</td>
+                        <td>0</td>
+                        <td>-100</td>
+                        <td>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4016="4016">
+                        <td class="invoice-number">inv01530</td>
+                        <td>6/2/2021</td>
+                        <td>Paid</td>
+                        <td>Sevastian Sniff - P00473 <br></td>
+                        <td>487.48</td>
+                        <td>387.48</td>
+                        <td>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4017="4017">
+                        <td class="invoice-number">inv01554</td>
+                        <td>6/8/2021</td>
+                        <td>Paid</td>
+                        <td>Shreenidhi Ashok Patil - P00005 </td>
+                        <td>667500</td>
+                        <td>661500</td>
+                        <td>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4019="4019">
+                        <td class="invoice-number">inv01582</td>
+                        <td>6/26/2021</td>
+                        <td>Billed</td>
+                        <td>Anna Renee Langager - P00744 <br></td>
+                        <td>567.8</td>
+                        <td>400</td>
+                        <td>
+                            <!----><button class="btn btn-default neutral" data-ember-action="" data-ember-action-4020="4020">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4022="4022">
+                        <td class="invoice-number">inv01584</td>
+                        <td>6/26/2021</td>
+                        <td>Billed</td>
+                        <td>Philips Dela Cruz Rivera - P03236 <br></td>
+                        <td>70.33</td>
+                        <td>70.33</td>
+                        <td>
+                            <!----><button class="btn btn-default neutral" data-ember-action="" data-ember-action-4023="4023">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4025="4025">
+                        <td class="invoice-number">inv01589</td>
+                        <td>7/17/2021</td>
+                        <td>Billed</td>
+                        <td>Teste sdfsd dsfds - P01628 <br></td>
+                        <td>2500</td>
+                        <td>2500</td>
+                        <td>
+                            <!----><button class="btn btn-default neutral" data-ember-action="" data-ember-action-4026="4026">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4027="4027">
+                        <td class="invoice-number">inv01592</td>
+                        <td>7/23/2021</td>
+                        <td>Paid</td>
+                        <td>Chris will Hill - P01095 <br></td>
+                        <td>1550</td>
+                        <td>539.5</td>
+                        <td>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4028="4028">
+                        <td class="invoice-number">inv01600</td>
+                        <td>8/6/2021</td>
+                        <td>Paid</td>
+                        <td>John McLane - P01418 <br></td>
+                        <td>3</td>
+                        <td>-197</td>
+                        <td>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4030="4030">
+                        <td class="invoice-number">1</td>
+                        <td>8/14/2021</td>
+                        <td>Billed</td>
+                        <td>Peter Gary Evans - P01298 <br>COVID-19, COVID-19</td>
+                        <td>8800</td>
+                        <td>0</td>
+                        <td>
+                            <!----><button class="btn btn-default neutral" data-ember-action="" data-ember-action-4031="4031">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4033="4033">
+                        <td class="invoice-number">inv01617</td>
+                        <td>8/30/2021</td>
+                        <td>Billed</td>
+                        <td>Shreenidhi Ashok Patil - P00005</td>
+                        <td>26274.35</td>
+                        <td>251.35</td>
+                        <td>
+                            <!----><button class="btn btn-default neutral" data-ember-action="" data-ember-action-4034="4034">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4036="4036">
+                        <td class="invoice-number">inv01624</td>
+                        <td>9/20/2021</td>
+                        <td>Billed</td>
+                        <td>Esmeralda Garcia Arimbuyutan - P02580 <br></td>
+                        <td>21201.42</td>
+                        <td>100</td>
+                        <td>
+                            <!----><button class="btn btn-default neutral" data-ember-action="" data-ember-action-4037="4037">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4039="4039">
+                        <td class="invoice-number">jkh</td>
+                        <td>9/21/2021</td>
+                        <td>Billed</td>
+                        <td>Sae Young Lee Choi - P02452 <br></td>
+                        <td>800</td>
+                        <td>400</td>
+                        <td>
+                            <!----><button class="btn btn-default neutral" data-ember-action="" data-ember-action-4040="4040">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-4042="4042">
+                        <td class="invoice-number">sdasd</td>
+                        <td>10/9/2021</td>
+                        <td>Billed</td>
+                        <td>Juan Tomas Dela Cruz - P02793 <br></td>
+                        <td>1737</td>
+                        <td>300</td>
+                        <td>
+                            <!----><button class="btn btn-default neutral" data-ember-action="" data-ember-action-4043="4043">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <!-- Footer -->
+        {% include 'administrator/footer.html' %}
+    </div>
+</div>
+<!-- Argon Scripts -->
+{% include 'administrator/footer-script.html' %} {% endblock %}
