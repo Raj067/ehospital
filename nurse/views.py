@@ -71,3 +71,51 @@ def add_theater_schedule(request, *args, **kwargs):
         'data': users
     }
     return render(request, 'nurse/add_theater_schedule.html', data)
+
+
+def medication_requests(request, *args, **kwargs):
+    users = [
+        ['I0001', 'Rajabu Mrisho', 'Male', 43, 'Normal', '23/56'],
+        ['I0002', 'Salehe Mrisho', 'Male', 67, 'stable', '90/45'],
+        ['I0003', 'Jamila Mrisho', 'Female', 89, 'unstable', '90/45'],
+    ]
+    data = {
+        'data': users
+    }
+    return render(request, 'nurse/medication_requests.html', data)
+
+
+def medication_completed(request, *args, **kwargs):
+    users = [
+        ['I0001', 'Rajabu Mrisho', 'Male', 43, 'Normal', '23/56'],
+        ['I0002', 'Salehe Mrisho', 'Male', 67, 'stable', '90/45'],
+        ['I0003', 'Jamila Mrisho', 'Female', 89, 'unstable', '90/45'],
+    ]
+    data = {
+        'data': users
+    }
+    return render(request, 'nurse/medication_completed.html', data)
+
+
+def report(request, *args, **kwargs):
+    users = [
+        ['I0001', 'Rajabu Mrisho', 'Male', 43, 'Normal', '23/56'],
+        ['I0002', 'Salehe Mrisho', 'Male', 67, 'stable', '90/45'],
+        ['I0003', 'Jamila Mrisho', 'Female', 89, 'unstable', '90/45'],
+    ]
+    data = {
+        'data': users
+    }
+    return render(request, 'nurse/report.html', data)
+
+
+def complaints(request, *args, **kwargs):
+    users = [
+        ['I0001', 'Rajabu Mrisho', 'Male', 43, 'Normal', '23/56'],
+        ['I0002', 'Salehe Mrisho', 'Male', 67, 'stable', '90/45'],
+        ['I0003', 'Jamila Mrisho', 'Female', 89, 'unstable', '90/45'],
+    ]
+    data = {
+        'data': users
+    }
+    return render(request, 'nurse/complaints.html', data)
