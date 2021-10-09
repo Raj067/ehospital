@@ -130,3 +130,50 @@ def add_theater_schedule(request, *args, **kwargs):
         'data': users
     }
     return render(request, 'doctor/add_theater_schedule.html', data)
+
+
+def lab_request(request, *args, **kwargs):
+    return render(request, 'doctor/lab-request.html', {})
+
+
+def lab_completed(request, *args, **kwargs):
+    return render(request, 'doctor/lab-completed.html', {})
+
+
+def lab_new(request, *args, **kwargs):
+    return render(request, 'doctor/lab-new.html', {})
+
+
+def invoice(request, *args, **kwargs):
+    return render(request, 'doctor/invoice.html', {})
+
+
+def new_invoice(request, *args, **kwargs):
+    return render(request, 'doctor/new-invoice.html', {})
+
+
+def price(request, *args, **kwargs):
+    return render(request, 'doctor/price.html', {})
+
+def price_profile(request, *args, **kwargs):
+    return render(request, 'doctor/price-profile.html', {})
+
+
+def cashier(request, *args, **kwargs):
+    return render(request, 'doctor/cashier.html', {})
+
+
+def current_incident(request, *args, **kwargs):
+    return render(request, 'doctor/current-incident.html', {})
+
+
+def new_incident(request, *args, **kwargs):
+    return render(request, 'doctor/new-incident.html', {})
+
+
+def history_incident(request, *args, **kwargs):
+    return render(request, 'doctor/history-incident.html', {})
+
+
+def report_incident(request, *args, **kwargs):
+    return render(request, 'doctor/report-incident.html', {})
