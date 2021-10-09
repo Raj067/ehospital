@@ -15,9 +15,9 @@ def dashboard(request, *args, **kwargs):
 
 def all_schedule(request, *args, **kwargs):
     users = [
-        ['I0001', 'Rajabu Mrisho', 'Male', 43, 'Normal', '23/56'],
-        ['I0002', 'Salehe Mrisho', 'Male', 67, 'stable', '90/45'],
-        ['I0003', 'Jamila Mrisho', 'Female', 89, 'unstable', '90/45'],
+        ['1-10-2021', '9:00AM - 12:00AM', 'Rajabu Mrisho', 'Male', 'Consultation', 'Normal'],
+        ['2-10-2021', '9:00AM - 12:00AM', 'Salehe Mrisho', 'Male', 'Imaging', 'stable'],
+        ['3-10-2021', '9:00AM - 12:00AM', 'Jamila Mrisho', 'Female', 'Imaging', 'unstable'],
     ]
     data={
         'data': users
@@ -27,9 +27,8 @@ def all_schedule(request, *args, **kwargs):
 
 def today_schedule(request, *args, **kwargs):
     users = [
-        ['I0001', 'Rajabu Mrisho', 'Male', 43, 'Normal', '23/56'],
-        ['I0002', 'Salehe Mrisho', 'Male', 67, 'stable', '90/45'],
-        ['I0003', 'Jamila Mrisho', 'Female', 89, 'unstable', '90/45'],
+        ['1-10-2021', '9:00AM - 12:00AM', 'Rajabu Mrisho', 'Male', 'Consultation', 'Normal'],
+        ['2-10-2021', '9:00AM - 12:00AM', 'Salehe Mrisho', 'Male', 'Imaging', 'stable'],
     ]
     data = {
         'data': users
