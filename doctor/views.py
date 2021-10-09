@@ -45,7 +45,7 @@ def report(request, *args, **kwargs):
     return render(request, 'doctor/report.html', data)
 
 def complaints(request, *args, **kwargs):
-    return render(request, 'doctor/compaints.html', {})
+    return render(request, 'doctor/complaints.html', {})
 
 
 def medication_request(request, *args, **kwargs):
