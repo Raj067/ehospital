@@ -1,0 +1,380 @@
+{% extends 'doctor/base.html' %} {% block title %}
+<title>
+    Sample homepage
+</title>
+
+{% endblock %} {% block content %}
+
+<!-- Sidenav -->
+{% include 'doctor/nav-bar.html' %}
+<!-- Main content -->
+<div class="main-content" id="panel">
+    <!-- Topnav -->
+    {% include 'doctor/top-nav-bar.html' %}
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header pb-6">
+        <div class="container-fluid">
+            <div class="header-body">
+                <div class="row align-items-center py-4">
+                    <div class="col-lg-6 col-7">
+                        <h6 class="h2 d-inline-block mb-0">New Request</h6>
+                        <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                            <ol class="breadcrumb breadcrumb-links">
+                                <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="/">Dashboards</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Complaints</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- <div class="col-lg-6 col-5 text-right">
+                        <a href="#" class="btn btn-sm btn-neutral">New</a>
+                        <a href="#" class="btn btn-sm btn-neutral">Filters</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 card-wrapper ct-example">
+
+
+                <!-- Sizes -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h3 class="mb-0">New Lab Request</h3>
+                            </div>
+                            <!-- <div class="col-4 text-right">
+                                <a href="#!" class="btn btn-sm btn-primary">Settings</a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <h6 class="heading-small text-muted mb-4">Patient information</h6>
+                            <div class="pl-lg-4">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-first-name">First name</label>
+                                            <input type="text" id="input-first-name" class="form-control" placeholder="First name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-last-name">Last name</label>
+                                            <input type="text" id="input-last-name" class="form-control" placeholder="Last name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-username">Phone Number</label>
+                                            <input type="tel" id="input-username" class="form-control" placeholder="06712345678">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="exampleFormControlSelect1">Select sex</label>
+                                            <select class="form-control" id="exampleFormControlSelect1" required>
+                                                <option value="">------</option>
+                                                <option value="m">Male</option>
+                                                <option value="f">Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="my-4" />
+                            <!-- Address -->
+                            <h6 class="heading-small text-muted mb-4">Medical information</h6>
+                            <div class="pl-lg-4">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-Weight">Weight</label>
+                                            <input type="number" id="input-Weight" class="form-control" placeholder="Weight of patient">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-Height">Height</label>
+                                            <input type="number" id="input-Height" class="form-control" placeholder="Height">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-Blood">Blood Pressure</label>
+                                            <input type="text" id="input-Blood" class="form-control" placeholder="Blood Pressure">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-age">Age</label>
+                                            <input type="number" id="input-age" class="form-control" placeholder="Age">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="my-4" />
+                            <!-- Address -->
+                            <h6 class="heading-small text-muted mb-4">Lab information</h6>
+                            <div class="pl-lg-4">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-Weight">Status</label>
+                                            <input type="text" id="input-Weight" class="form-control" placeholder="Weight of patient">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-Height">Specimen</label>
+                                            <input type="text" id="input-Height" class="form-control" placeholder="Height">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-Blood">Querries</label>
+                                            <input type="text" id="input-Blood" class="form-control" placeholder="Blood Pressure">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-age">Ordered</label>
+                                            <input type="text" id="input-age" class="form-control" placeholder="Age">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">Test</label>
+                                    <textarea rows="4" class="form-control" placeholder="Patient test"></textarea>
+                                </div>
+                            </div>
+                            <hr class="my-4" />
+                            <!-- Address -->
+                            <h6 class="heading-small text-muted mb-4">Clinical Microscopy</h6>
+                            <div class="pl-lg-4 mb-4">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label class="form-control-label" for="input-Height">Color (Normal: Yellow)</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Colorless
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                            Yellow
+                                        </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault3">
+                                            <label class="form-check-label" for="flexRadioDefault3">
+                                                Amber
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault4">
+                                            <label class="form-check-label" for="flexRadioDefault4">
+                                                Other
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label class="form-control-label" for="input-Height">Appearance (Normal: Clear)</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Clear
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                            Hazy
+                                        </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                            <label class="form-check-label" for="flexRadioDefault3">
+                                                Cloudy
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                                            <label class="form-check-label" for="flexRadioDefault4">
+                                                Turbid
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                                            <label class="form-check-label" for="flexRadioDefault5">
+                                                Other
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-Blood">Odor (Normal: Slight)</label>
+                                            <input type="text" id="input-Blood" class="form-control" placeholder="Normal">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-age">Glucose (Normal Reference Range: Negative)</label>
+                                            <input type="text" id="input-age" class="form-control" placeholder="Negative">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-Blood">Bilirubin (Normal Reference Range: Negative)</label>
+                                            <input type="text" id="input-Blood" class="form-control" placeholder="Negative">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-age">Specific Gravity (Normal Reference Range: 1.005 – 1.030 with)</label>
+                                            <input type="text" id="input-age" class="form-control" placeholder="1.005 – 1.030">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-Blood">Blood (Normal Reference Range: Negative)</label>
+                                            <input type="text" id="input-Blood" class="form-control" placeholder="Negative">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-age">pH (Normal Reference Range: 5-9)</label>
+                                            <input type="text" id="input-age" class="form-control" placeholder="5-9">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-Blood">Protein (Normal Reference Range: Negative)</label>
+                                            <input type="text" id="input-Blood" class="form-control" placeholder="Negative">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-age">Urobilinogen (Normal Reference Range: 3-16 umol/L)
+</label>
+                                            <input type="text" id="input-age" class="form-control" placeholder="3-16 umol/L">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-Blood">Nitrate (Normal Reference Range: Negative)</label>
+                                            <input type="text" id="input-Blood" class="form-control" placeholder="Negative">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-age">Leukocyte Esterase</label>
+                                            <input type="text" id="input-age" class="form-control" placeholder="Normal">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-Blood">White Cells (Normal Reference Range: 0-2/hpf)</label>
+                                            <input type="text" id="input-Blood" class="form-control" placeholder="Normal">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-age">
+Red Blood Cells (Normal Reference Range: 0-2/hpf)</label>
+                                            <input type="text" id="input-age" class="form-control" placeholder="Normal">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-Blood">Epithelial (Normal: Occasional Squamous /hpf)</label>
+                                            <input type="text" id="input-Blood" class="form-control" placeholder="Normal">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-age">Mucous(Normal: Slight)</label>
+                                            <input type="text" id="input-age" class="form-control" placeholder="Normal">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-Blood">Cast (Normal: Occasional hyaline cast /hpf)</label>
+                                            <input type="text" id="input-Blood" class="form-control" placeholder="Normal">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-age">Bacteria</label>
+                                            <input type="text" id="input-age" class="form-control" placeholder="Negative">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-Blood">Crystals</label>
+                                            <input type="text" id="input-Blood" class="form-control" placeholder="Negative">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-age">Ketone (Normal Reference Range: Negative)</label>
+                                            <input type="text" id="input-age" class="form-control" placeholder="Negative">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr class="my-4" />
+                            <!-- Description -->
+                            <h6 class="heading-small text-muted mb-4">Description</h6>
+                            <div class="pl-lg-4">
+                                <div class="form-group">
+                                    <label class="form-control-label">Description</label>
+                                    <textarea rows="4" class="form-control" placeholder="Patient description"></textarea>
+                                </div>
+                            </div>
+                            <input type="submit" value="Save changes" class="btn btn-primary">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Footer -->
+        {% include 'doctor/footer.html' %}
+    </div>
+</div>
+<!-- Argon Scripts -->
+{% include 'doctor/footer-script.html' %} {% endblock %}

@@ -1,0 +1,532 @@
+{% extends 'doctor/base.html' %} {% block title %}
+<title>
+    Sample homepage
+</title>
+
+{% endblock %} {% block content %}
+
+<!-- Sidenav -->
+{% include 'doctor/nav-bar.html' %}
+<!-- Main content -->
+<div class="main-content" id="panel">
+    <!-- Topnav -->
+    {% include 'doctor/top-nav-bar.html' %}
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header pb-6">
+        <div class="container-fluid">
+            <div class="header-body">
+                <div class="row align-items-center py-4">
+                    <div class="col-lg-6 col-7">
+                        <h6 class="h2 d-inline-block mb-0">History</h6>
+                        <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                            <ol class="breadcrumb breadcrumb-links">
+                                <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="/">Dashboards</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">History</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- <div class="col-lg-6 col-5 text-right">
+                        <a href="#" class="btn btn-sm btn-neutral">New</a>
+                        <a href="#" class="btn btn-sm btn-neutral">Filters</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+
+        <div class="panel-body">
+            <div id="ember3250" class="panel panel-primary ember-view">
+                <div id="ember3251" class="paging-buttons ember-view">
+                    <!---->
+                </div>
+                <table class="table incident-listing">
+                    <tr class="table-header">
+                        <th id="ember3252" class="sortable-column ember-view"><span data-ember-action="" data-ember-action-3253="3253">
+    <span class="octicon octicon-triangle-down inactive"></span> Date of Incident
+
+                            </span>
+                            <span class="dropdown">
+    <span data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="glyphicon glyphicon-filter dropdown-toggle inactive neutral"></span>
+                            <ul class="dropdown-menu">
+                                <!---->
+                                <!---->
+                                <li>
+                                    <div id="ember3254" class="input-group ember-view"><input type="text" class="form-control">
+                                        <span class="input-group-btn">
+  <button type="button" class="btn btn-default warning">
+    <span class="octicon octicon-x" data-ember-action="" data-ember-action-3255="3255"></span>
+                                        </button>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            </span>
+                        </th>
+                        <th id="ember3256" class="sortable-column ember-view"><span data-ember-action="" data-ember-action-3257="3257">
+    <span class="octicon octicon-triangle-down inactive"></span> Department
+
+                            </span>
+                            <span class="dropdown">
+    <span data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="glyphicon glyphicon-filter dropdown-toggle inactive neutral"></span>
+                            <ul class="dropdown-menu">
+                                <!---->
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3258="3258">
+            (Select All)
+          </a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3259="3259">A&amp;E RESUS</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3260="3260">B</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3261="3261">COVIID</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3262="3262">Departamento de Teste</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3263="3263">EEG</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3264="3264">ER</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3265="3265">ERssc </a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3266="3266">Emergency</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3267="3267">ICU</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3268="3268">OPD</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3269="3269">Oncology</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3270="3270">Pathology</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3271="3271">Pharmacy</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3272="3272">QUALITY</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3273="3273">RESUS</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3274="3274">RSUD Drajat</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3275="3275">Rumah Sakit Umum Daerah Bandung</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3276="3276">Screening</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3277="3277">Technology </a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3278="3278">Ward </a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3279="3279">Xray</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3280="3280">aSXA</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3281="3281">borad</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3282="3282">cardiology</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3283="3283">covid</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3284="3284">fdsafds</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3285="3285">hh</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3286="3286">kgh</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3287="3287">lad</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3288="3288">test</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3289="3289">uyh</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3290="3290">vsdvdd</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3291="3291">а</a>
+                                </li>
+                                <!---->
+                            </ul>
+                            </span>
+                        </th>
+                        <th id="ember3292" class="sortable-column ember-view"><span data-ember-action="" data-ember-action-3293="3293">
+    <span class="octicon octicon-triangle-down inactive"></span> Category
+
+                            </span>
+                            <span class="dropdown">
+    <span data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="glyphicon glyphicon-filter dropdown-toggle inactive neutral"></span>
+                            <ul class="dropdown-menu">
+                                <!---->
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3294="3294">
+            (Select All)
+          </a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3295="3295">Zombie attack</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3296="3296">Cardiac Arrest</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3297="3297">Partied too hard</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3298="3298">Covid-19</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3299="3299">Injury</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3300="3300">COVID - 6/13/2021</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3301="3301">Fever</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3302="3302">new-incident-category</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3303="3303">fall dea</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3304="3304">Urinalysis</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3305="3305">Broken leg</a>
+                                </li>
+                                <!---->
+                            </ul>
+                            </span>
+                        </th>
+                        <th id="ember3306" class="sortable-column ember-view"><span data-ember-action="" data-ember-action-3307="3307">
+    <span class="octicon octicon-triangle-down inactive"></span> Category Item
+
+                            </span>
+                            <span class="dropdown">
+    <span data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="glyphicon glyphicon-filter dropdown-toggle inactive neutral"></span>
+                            <ul class="dropdown-menu">
+                                <!---->
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3308="3308">
+            (Select All)
+          </a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3309="3309">Scratch</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3310="3310">Bite</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3311="3311">Test</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3312="3312">Unknown Origin</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3313="3313">Rheumatic</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3314="3314">item01</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3315="3315">Eye</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3316="3316">Fast</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3317="3317">Macroscopic</a>
+                                </li>
+                                <!---->
+                            </ul>
+                            </span>
+                        </th>
+                        <th id="ember3318" class="sortable-column ember-view"><span data-ember-action="" data-ember-action-3319="3319">
+    <span class="octicon octicon-triangle-down inactive"></span> Status
+
+                            </span>
+                            <span class="dropdown">
+    <span data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="glyphicon glyphicon-filter dropdown-toggle inactive neutral"></span>
+                            <ul class="dropdown-menu">
+                                <!---->
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3320="3320">
+            (Select All)
+          </a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3321="3321">Closed</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3322="3322">Closed</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3323="3323">Closed</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3324="3324">Closed</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3325="3325">Closed</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3326="3326">Closed</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3327="3327">Closed</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3328="3328">Closed</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3329="3329">Closed</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3330="3330">Closed</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3331="3331">Closed</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3332="3332">Closed</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3333="3333">Closed</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3334="3334">Closed</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3335="3335">Closed</a>
+                                </li>
+                                <li>
+                                    <a data-ember-action="" data-ember-action-3336="3336">Closed</a>
+                                </li>
+                                <!---->
+                            </ul>
+                            </span>
+                        </th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr class="incident-row" data-ember-action="" data-ember-action-3337="3337">
+                        <td class="incident-date">11/18/2020</td>
+                        <td class="incident-department">ERssc </td>
+                        <td class="incident-category">Zombie attack</td>
+                        <td class="incident-category-item">Scratch</td>
+                        <td class="incident-status">Closed</td>
+                        <td>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3338="3338">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="incident-row" data-ember-action="" data-ember-action-3339="3339">
+                        <td class="incident-date">9/19/2020</td>
+                        <td class="incident-department">fdsafds</td>
+                        <td class="incident-category">Zombie attack</td>
+                        <td class="incident-category-item">Bite</td>
+                        <td class="incident-status">Closed</td>
+                        <td>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3340="3340">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="incident-row" data-ember-action="" data-ember-action-3341="3341">
+                        <td class="incident-date">11/25/2020</td>
+                        <td class="incident-department">vsdvdd</td>
+                        <td class="incident-category">Cardiac Arrest</td>
+                        <td class="incident-category-item">Test</td>
+                        <td class="incident-status">Closed</td>
+                        <td>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3342="3342">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="incident-row" data-ember-action="" data-ember-action-3343="3343">
+                        <td class="incident-date">6/3/2021</td>
+                        <td class="incident-department">borad</td>
+                        <td class="incident-category">Cardiac Arrest</td>
+                        <td class="incident-category-item">Test</td>
+                        <td class="incident-status">Closed</td>
+                        <td>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3344="3344">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="incident-row" data-ember-action="" data-ember-action-3345="3345">
+                        <td class="incident-date">9/24/2020</td>
+                        <td class="incident-department">Departamento de Teste</td>
+                        <td class="incident-category">Partied too hard</td>
+                        <td class="incident-category-item">Unknown Origin</td>
+                        <td class="incident-status">Closed</td>
+                        <td>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3346="3346">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="incident-row" data-ember-action="" data-ember-action-3347="3347">
+                        <td class="incident-date">11/14/2020</td>
+                        <td class="incident-department">Oncology</td>
+                        <td class="incident-category">Covid-19</td>
+                        <td class="incident-category-item"></td>
+                        <td class="incident-status">Closed</td>
+                        <td>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3348="3348">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="incident-row" data-ember-action="" data-ember-action-3349="3349">
+                        <td class="incident-date">6/4/2021</td>
+                        <td class="incident-department">Pathology</td>
+                        <td class="incident-category">Injury</td>
+                        <td class="incident-category-item"></td>
+                        <td class="incident-status">Closed</td>
+                        <td>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3350="3350">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="incident-row" data-ember-action="" data-ember-action-3351="3351">
+                        <td class="incident-date">6/2/2021</td>
+                        <td class="incident-department">Emergency</td>
+                        <td class="incident-category">COVID - 6/13/2021</td>
+                        <td class="incident-category-item"></td>
+                        <td class="incident-status">Closed</td>
+                        <td>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3352="3352">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="incident-row" data-ember-action="" data-ember-action-3353="3353">
+                        <td class="incident-date">5/12/2020</td>
+                        <td class="incident-department">Screening</td>
+                        <td class="incident-category">Fever</td>
+                        <td class="incident-category-item">Rheumatic</td>
+                        <td class="incident-status">Closed</td>
+                        <td>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3354="3354">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="incident-row" data-ember-action="" data-ember-action-3355="3355">
+                        <td class="incident-date">1/19/2020</td>
+                        <td class="incident-department">sfgwserg</td>
+                        <td class="incident-category">new-incident-category</td>
+                        <td class="incident-category-item">item01</td>
+                        <td class="incident-status">Closed</td>
+                        <td>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3356="3356">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="incident-row" data-ember-action="" data-ember-action-3357="3357">
+                        <td class="incident-date">5/21/2020</td>
+                        <td class="incident-department">Emergency</td>
+                        <td class="incident-category">Fever</td>
+                        <td class="incident-category-item">Eye</td>
+                        <td class="incident-status">Closed</td>
+                        <td>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3358="3358">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="incident-row" data-ember-action="" data-ember-action-3359="3359">
+                        <td class="incident-date">9/8/2020</td>
+                        <td class="incident-department">ICU</td>
+                        <td class="incident-category">Partied too hard</td>
+                        <td class="incident-category-item">Fast</td>
+                        <td class="incident-status">Closed</td>
+                        <td>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3360="3360">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="incident-row" data-ember-action="" data-ember-action-3361="3361">
+                        <td class="incident-date">12/30/2019</td>
+                        <td class="incident-department">ED</td>
+                        <td class="incident-category">new-incident-category</td>
+                        <td class="incident-category-item"></td>
+                        <td class="incident-status">Closed</td>
+                        <td>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3362="3362">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="incident-row" data-ember-action="" data-ember-action-3363="3363">
+                        <td class="incident-date">1/7/2020</td>
+                        <td class="incident-department">sfgwserg</td>
+                        <td class="incident-category">fall dea</td>
+                        <td class="incident-category-item"></td>
+                        <td class="incident-status">Closed</td>
+                        <td>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3364="3364">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="incident-row" data-ember-action="" data-ember-action-3365="3365">
+                        <td class="incident-date">8/18/2021</td>
+                        <td class="incident-department">hh</td>
+                        <td class="incident-category">Urinalysis</td>
+                        <td class="incident-category-item">Macroscopic</td>
+                        <td class="incident-status">Closed</td>
+                        <td>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3366="3366">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                    <tr class="incident-row" data-ember-action="" data-ember-action-3367="3367">
+                        <td class="incident-date">3/23/2020</td>
+                        <td class="incident-department">QUALITY</td>
+                        <td class="incident-category">Broken leg</td>
+                        <td class="incident-category-item"></td>
+                        <td class="incident-status">Closed</td>
+                        <td>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3368="3368">Edit</button>
+                            <!---->
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+        <!-- Footer -->
+        {% include 'doctor/footer.html' %}
+    </div>
+</div>
+<!-- Argon Scripts -->
+{% include 'doctor/footer-script.html' %} {% endblock %}

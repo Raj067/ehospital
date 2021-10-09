@@ -1,0 +1,287 @@
+{% extends 'doctor/base.html' %} {% block title %}
+<title>
+    Sample homepage
+</title>
+
+{% endblock %} {% block content %}
+
+<!-- Sidenav -->
+{% include 'doctor/nav-bar.html' %}
+<!-- Main content -->
+<div class="main-content" id="panel">
+    <!-- Topnav -->
+    {% include 'doctor/top-nav-bar.html' %}
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header pb-6">
+        <div class="container-fluid">
+            <div class="header-body">
+                <div class="row align-items-center py-4">
+                    <div class="col-lg-6 col-7">
+                        <h6 class="h2 d-inline-block mb-0">Lab Completed</h6>
+                        <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                            <ol class="breadcrumb breadcrumb-links">
+                                <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="/">Dashboards</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Lab Completed</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- <div class="col-lg-6 col-5 text-right">
+                        <a href="#" class="btn btn-sm btn-neutral">New</a>
+                        <a href="#" class="btn btn-sm btn-neutral">Filters</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+        <div class="panel-body">
+            <div id="ember5601" class="panel panel-primary ember-view">
+
+                <table class="table">
+                    <tr class="table-header">
+                        <th>Date Requested</th>
+                        <th>Date Completed</th>
+                        <th>Patient</th>
+                        <th>Requested By</th>
+                        <th>Lab Type</th>
+                        <th>Results</th>
+                        <th>Notes</th>
+                    </tr>
+                    <tr id="ember5614" class="ember-view">
+                        <td class="requested-date">10/8/2019</td>
+                        <td class="lab-date">6/20/2021</td>
+                        <td class="patient">abc efg</td>
+                        <td class="requested-by">Doctor</td>
+                        <td class="lab-type">urinalysis</td>
+                        <td class="result">sss</td>
+                        <td class="notes">sdsdsd</td>
+                    </tr>
+                    <tr id="ember5616" class="ember-view">
+                        <td class="requested-date">10/8/2019</td>
+                        <td class="lab-date">10/10/2019</td>
+                        <td class="patient">abc efg</td>
+                        <td class="requested-by">Doctor</td>
+                        <td class="lab-type">urinalysis</td>
+                        <td class="result">aaa</td>
+                        <td class="notes">bbb</td>
+                    </tr>
+                    <tr id="ember5618" class="ember-view">
+                        <td class="requested-date">10/10/2019</td>
+                        <td class="lab-date">10/10/2019</td>
+                        <td class="patient">abc efg</td>
+                        <td class="requested-by">Hospital Admin</td>
+                        <td class="lab-type">Ankle (Any Single View)</td>
+                        <td class="result">asda</td>
+                        <td class="notes">-- </td>
+                    </tr>
+                    <tr id="ember5620" class="ember-view">
+                        <td class="requested-date">10/10/2019</td>
+                        <td class="lab-date">10/16/2019</td>
+                        <td class="patient">Rajabu Mrisho</td>
+                        <td class="requested-by">Doctor</td>
+                        <td class="lab-type">bvcbcbvbn</td>
+                        <td class="result"></td>
+                        <td class="notes">-- </td>
+                    </tr>
+                    <tr id="ember5623" class="ember-view">
+                        <td class="requested-date">10/10/2019</td>
+                        <td class="lab-date">10/22/2019</td>
+                        <td class="patient">Juan Dela</td>
+                        <td class="requested-by">Lab Technician</td>
+                        <td class="lab-type">m</td>
+                        <td class="result">687</td>
+                        <td class="notes">kfus k</td>
+                    </tr>
+                    <tr id="ember5626" class="ember-view">
+                        <td class="requested-date">10/12/2019</td>
+                        <td class="lab-date">10/12/2019</td>
+                        <td class="patient">abc efg</td>
+                        <td class="requested-by">Hospital Admin</td>
+                        <td class="lab-type">test</td>
+                        <td class="result"></td>
+                        <td class="notes"></td>
+                    </tr>
+                    <tr id="ember5629" class="ember-view">
+                        <td class="requested-date">10/14/2019</td>
+                        <td class="lab-date">3/18/2020</td>
+                        <td class="patient">abc efg</td>
+                        <td class="requested-by">Doctor</td>
+                        <td class="lab-type">cbc</td>
+                        <td class="result"></td>
+                        <td class="notes">Hct 10%</td>
+                    </tr>
+                    <tr id="ember5631" class="ember-view">
+                        <td class="requested-date">10/14/2019</td>
+                        <td class="lab-date">10/14/2019</td>
+                        <td class="patient">rio rao</td>
+                        <td class="requested-by">Hospital Admin</td>
+                        <td class="lab-type">X-Ray (Right Side Abdomen)</td>
+                        <td class="result">RAS</td>
+                        <td class="notes"></td>
+                    </tr>
+                    <tr id="ember5633" class="ember-view">
+                        <td class="requested-date">10/15/2019</td>
+                        <td class="lab-date">10/15/2019</td>
+                        <td class="patient">abc efg</td>
+                        <td class="requested-by">Hospital Admin</td>
+                        <td class="lab-type">Fasting Blood Sugar (FBS)</td>
+                        <td class="result"></td>
+                        <td class="notes"></td>
+                    </tr>
+                    <tr id="ember5635" class="ember-view">
+                        <td class="requested-date">10/15/2019</td>
+                        <td class="lab-date">11/11/2019</td>
+                        <td class="patient">Juan Dela</td>
+                        <td class="requested-by">Doctor</td>
+                        <td class="lab-type">FBC </td>
+                        <td class="result"></td>
+                        <td class="notes">-- </td>
+                    </tr>
+                    <tr id="ember5638" class="ember-view">
+                        <td class="requested-date">10/16/2019</td>
+                        <td class="lab-date">11/13/2019</td>
+                        <td class="patient">Saudadea Silva</td>
+                        <td class="requested-by">Doctor</td>
+                        <td class="lab-type">cbc</td>
+                        <td class="result">Left Ventricular failure</td>
+                        <td class="notes">-- </td>
+                    </tr>
+                    <tr id="ember5640" class="ember-view">
+                        <td class="requested-date">10/16/2019</td>
+                        <td class="lab-date">11/14/2019</td>
+                        <td class="patient">Saudadea Bento</td>
+                        <td class="requested-by">Doctor</td>
+                        <td class="lab-type">CMP</td>
+                        <td class="result"></td>
+                        <td class="notes"></td>
+                    </tr>
+                    <tr id="ember5643" class="ember-view">
+                        <td class="requested-date">10/16/2019</td>
+                        <td class="lab-date">11/17/2019</td>
+                        <td class="patient"> Silva Bento</td>
+                        <td class="requested-by">Doctor</td>
+                        <td class="lab-type">Coag</td>
+                        <td class="result"></td>
+                        <td class="notes">-- </td>
+                    </tr>
+                    <tr id="ember5646" class="ember-view">
+                        <td class="requested-date">10/16/2019</td>
+                        <td class="lab-date">10/16/2019</td>
+                        <td class="patient"> anil lambe</td>
+                        <td class="requested-by">Lab Technician</td>
+                        <td class="lab-type">cbc</td>
+                        <td class="result">10</td>
+                        <td class="notes"></td>
+                    </tr>
+                    <tr id="ember5648" class="ember-view">
+                        <td class="requested-date">10/16/2019</td>
+                        <td class="lab-date">11/27/2019</td>
+                        <td class="patient">abc efg</td>
+                        <td class="requested-by">Lab Technician</td>
+                        <td class="lab-type">1</td>
+                        <td class="result">1</td>
+                        <td class="notes">-- </td>
+                    </tr>
+                    <tr id="ember5651" class="ember-view">
+                        <td class="requested-date">10/17/2019</td>
+                        <td class="lab-date">11/18/2019</td>
+                        <td class="patient">ABA Ngwa</td>
+                        <td class="requested-by">Doctor</td>
+                        <td class="lab-type">Fasting Blood Sugar (FBS)</td>
+                        <td class="result">130</td>
+                        <td class="notes"></td>
+                    </tr>
+                    <tr id="ember5653" class="ember-view">
+                        <td class="requested-date">10/19/2019</td>
+                        <td class="lab-date">11/28/2019</td>
+                        <td class="patient">Daniel Weiss</td>
+                        <td class="requested-by">Doctor</td>
+                        <td class="lab-type">AIDS</td>
+                        <td class="result">fine</td>
+                        <td class="notes"></td>
+                    </tr>
+                    <tr id="ember5656" class="ember-view">
+                        <td class="requested-date">10/19/2019</td>
+                        <td class="lab-date">11/21/2019</td>
+                        <td class="patient">rajvardhan lambe</td>
+                        <td class="requested-by">Doctor</td>
+                        <td class="lab-type">HEM</td>
+                        <td class="result">GG</td>
+                        <td class="notes">W7</td>
+                    </tr>
+                    <tr id="ember5659" class="ember-view">
+                        <td class="requested-date">10/22/2019</td>
+                        <td class="lab-date">12/2/2019</td>
+                        <td class="patient">anu A</td>
+                        <td class="requested-by">Doctor</td>
+                        <td class="lab-type">X-Ray (Right Side Abdomen)</td>
+                        <td class="result">negative</td>
+                        <td class="notes">-- </td>
+                    </tr>
+                    <tr id="ember5661" class="ember-view">
+                        <td class="requested-date">10/22/2019</td>
+                        <td class="lab-date">12/4/2019</td>
+                        <td class="patient">ravi s</td>
+                        <td class="requested-by">Doctor</td>
+                        <td class="lab-type">X-Ray (Right Side Abdomen)</td>
+                        <td class="result"></td>
+                        <td class="notes">-- </td>
+                    </tr>
+                    <tr id="ember5663" class="ember-view">
+                        <td class="requested-date">10/30/2019</td>
+                        <td class="lab-date">12/12/2019</td>
+                        <td class="patient">Angel Locsin</td>
+                        <td class="requested-by">Doctor</td>
+                        <td class="lab-type">df</td>
+                        <td class="result">+</td>
+                        <td class="notes">-- </td>
+                    </tr>
+                    <tr id="ember5665" class="ember-view">
+                        <td class="requested-date">10/30/2019</td>
+                        <td class="lab-date">12/16/2019</td>
+                        <td class="patient">rajvardhan anil</td>
+                        <td class="requested-by">Doctor</td>
+                        <td class="lab-type">dev_lab</td>
+                        <td class="result">NEGATIVE</td>
+                        <td class="notes"></td>
+                    </tr>
+                    <tr id="ember5667" class="ember-view">
+                        <td class="requested-date">11/1/2019</td>
+                        <td class="lab-date">11/1/2019</td>
+                        <td class="patient">Juan la Verga</td>
+                        <td class="requested-by">Lab Technician</td>
+                        <td class="lab-type">Pathology</td>
+                        <td class="result">asdf</td>
+                        <td class="notes">-- </td>
+                    </tr>
+                    <tr id="ember5669" class="ember-view">
+                        <td class="requested-date">11/3/2019</td>
+                        <td class="lab-date">1/4/2020</td>
+                        <td class="patient">JOHN R. COFFY</td>
+                        <td class="requested-by">Doctor</td>
+                        <td class="lab-type">eye clinic</td>
+                        <td class="result"></td>
+                        <td class="notes">-- </td>
+                    </tr>
+                    <tr id="ember5671" class="ember-view">
+                        <td class="requested-date">11/4/2019</td>
+                        <td class="lab-date">11/18/2019</td>
+                        <td class="patient">abc efg</td>
+                        <td class="requested-by">Doctor</td>
+                        <td class="lab-type">ww</td>
+                        <td class="result"></td>
+                        <td class="notes">-- </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <!-- Footer -->
+        {% include 'doctor/footer.html' %}
+    </div>
+</div>
+<!-- Argon Scripts -->
+{% include 'doctor/footer-script.html' %} {% endblock %}

@@ -159,10 +159,6 @@ def price_profile(request, *args, **kwargs):
     return render(request, 'doctor/price-profile.html', {})
 
 
-def cashier(request, *args, **kwargs):
-    return render(request, 'doctor/cashier.html', {})
-
-
 def current_incident(request, *args, **kwargs):
     return render(request, 'doctor/current-incident.html', {})
 

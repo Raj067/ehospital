@@ -29,7 +29,6 @@ doctor_urls = [
     path('doctor/new-invoice/', new_invoice, name='new_invoice'),
     path('doctor/price/', price, name='price'),
     path('doctor/price-profile/', price_profile, name='price_profile'),
-    path('doctor/cashier/', cashier, name='cashier'),
     path('doctor/new-incident/', new_incident, name='new_incident'),
     path('doctor/current-incident/', current_incident, name='current_incident'),
     path('doctor/report-incident/', report_incident, name='report_incident'),
