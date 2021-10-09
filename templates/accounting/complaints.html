@@ -1,0 +1,85 @@
+{% extends 'accounting/base.html' %} {% block title %}
+<title>
+    Sample homepage
+</title>
+
+{% endblock %} {% block content %}
+
+<!-- Sidenav -->
+{% include 'accounting/nav-bar.html' %}
+<!-- Main content -->
+<div class="main-content" id="panel">
+    <!-- Topnav -->
+    {% include 'accounting/top-nav-bar.html' %}
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header pb-6">
+        <div class="container-fluid">
+            <div class="header-body">
+                <div class="row align-items-center py-4">
+                    <div class="col-lg-6 col-7">
+                        <h6 class="h2 d-inline-block mb-0">Complaints</h6>
+                        <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                            <ol class="breadcrumb breadcrumb-links">
+                                <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="/">Dashboards</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Complaints</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-lg-6 col-5 text-right">
+                        <a href="#" class="btn btn-sm btn-neutral">New</a>
+                        <a href="#" class="btn btn-sm btn-neutral">Filters</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 card-wrapper ct-example">
+
+
+                <!-- Sizes -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h3 class="mb-0">Send Complaints to Administration</h3>
+                            </div>
+                            <!-- <div class="col-4 text-right">
+                                <a href="#!" class="btn btn-sm btn-primary">Settings</a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="pl-lg-4">
+                                <div class="form-group">
+                                    <label class="form-control-label">Complaints</label>
+                                    <textarea rows="4" class="form-control" placeholder="Complaints"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label" for="exampleFormControlSelect1">Select the kind of complaint</label>
+                                    <select class="form-control" id="exampleFormControlSelect1" required>
+                                    <option value="">------</option>
+                                    <option value="m">From visitors</option>
+                                    <option value="f">From patients</option>
+                                    <option value="f">From employee</option>
+                                </select>
+                                </div>
+                            </div>
+                            <input type="submit" value="Submit" class="btn btn-primary">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Footer -->
+        {% include 'accounting/footer.html' %}
+    </div>
+</div>
+<!-- Argon Scripts -->
+{% include 'accounting/footer-script.html' %} {% endblock %}
