@@ -1,0 +1,309 @@
+{% extends 'administrator/base.html' %} {% block title %}
+<title>
+    Sample homepage
+</title>
+
+{% endblock %} {% block content %}
+
+<!-- Sidenav -->
+{% include 'administrator/nav-bar.html' %}
+<!-- Main content -->
+<div class="main-content" id="panel">
+    <!-- Topnav -->
+    {% include 'administrator/top-nav-bar.html' %}
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header pb-6">
+        <div class="container-fluid">
+            <div class="header-body">
+                <div class="row align-items-center py-4">
+                    <div class="col-lg-6 col-7">
+                        <h6 class="h2 d-inline-block mb-0">Inventory Requests</h6>
+                        <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                            <ol class="breadcrumb breadcrumb-links">
+                                <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="/">Dashboards</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Inventory Requests</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- <div class="col-lg-6 col-5 text-right">
+                        <a href="#" class="btn btn-sm btn-neutral">New</a>
+                        <a href="#" class="btn btn-sm btn-neutral">Filters</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+        <div class="panel-body">
+            <div id="ember2810" class="panel panel-primary ember-view">
+                <table class="table">
+                    <tr class="table-header">
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Requested On</th>
+                        <th>Requested By</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td>Paracetamol-120mg/5ml</td>
+                        <td>25</td>
+                        <td>9/23/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2819="2819">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2820="2820"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Paractamol</td>
+                        <td>50</td>
+                        <td>9/22/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2826="2826">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2827="2827"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Paractamol</td>
+                        <td>50</td>
+                        <td>9/22/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2829="2829">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2830="2830"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pumpset Kangaroo 1000ml</td>
+                        <td>120</td>
+                        <td>9/22/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2836="2836">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2837="2837"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Testim</td>
+                        <td>1</td>
+                        <td>10/4/2021</td>
+                        <td>Doctor</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2843="2843">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2844="2844"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Paractamol</td>
+                        <td>1</td>
+                        <td>9/28/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2846="2846">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2847="2847"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>crocin</td>
+                        <td>30</td>
+                        <td>9/22/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2853="2853">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2854="2854"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Paractamol</td>
+                        <td>15</td>
+                        <td>9/22/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2856="2856">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2857="2857"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ritalin</td>
+                        <td>20</td>
+                        <td>9/22/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2863="2863">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2864="2864"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Amlodipina 10 mg</td>
+                        <td>100</td>
+                        <td>9/22/2021</td>
+                        <td>Nurse Manager</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2870="2870">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2871="2871"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pumpset Kangaroo 1000ml</td>
+                        <td>4</td>
+                        <td>9/22/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2873="2873">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2874="2874"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cetirizine</td>
+                        <td>40</td>
+                        <td>9/23/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2880="2880">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2881="2881"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pumpset Kangaroo 1000ml</td>
+                        <td>5</td>
+                        <td>9/22/2021</td>
+                        <td>Nurse Manager</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2883="2883">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2884="2884"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Paractamol</td>
+                        <td>3</td>
+                        <td>9/22/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2886="2886">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2887="2887"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sulfasalazine</td>
+                        <td>2</td>
+                        <td>9/22/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2893="2893">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2894="2894"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Polyethylene glycol 3350 with electrolytes</td>
+                        <td>50</td>
+                        <td>9/22/2021</td>
+                        <td>Nurse Manager</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2900="2900">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2901="2901"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Paractamol</td>
+                        <td>4</td>
+                        <td>9/24/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2903="2903">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2904="2904"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>crocin</td>
+                        <td>20</td>
+                        <td>9/22/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2906="2906">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2907="2907"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Capsaicin</td>
+                        <td>50</td>
+                        <td>9/22/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2913="2913">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2914="2914"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Allegra</td>
+                        <td>30</td>
+                        <td>9/22/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2920="2920">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2921="2921"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pumpset Kangaroo 1000ml</td>
+                        <td>5</td>
+                        <td>9/22/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2923="2923">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2924="2924"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>azithral 500mg</td>
+                        <td>5</td>
+                        <td>9/22/2021</td>
+                        <td>Nurse Manager</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2930="2930">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2931="2931"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ritalin</td>
+                        <td>20</td>
+                        <td>9/22/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2933="2933">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2934="2934"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Paracetamol-120mg/5ml</td>
+                        <td>50</td>
+                        <td>9/22/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2936="2936">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2937="2937"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pumpset Kangaroo 1000ml</td>
+                        <td>5</td>
+                        <td>9/22/2021</td>
+                        <td>Hospital Admin</td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-2939="2939">Fulfill</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-2940="2940"><span class="octicon octicon-x"></span> Delete</button>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <!-- Footer -->
+        {% include 'administrator/footer.html' %}
+    </div>
+</div>
+<!-- Argon Scripts -->
+{% include 'administrator/footer-script.html' %} {% endblock %}

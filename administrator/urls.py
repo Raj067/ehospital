@@ -3,7 +3,16 @@ from .views import *
 
 administrator_urls = [
     path('administrator/', dashboard, name='dashboard'),
-    path('administrator/admitted-patient/', admitted_patient, name='admitted_patient'),
+    path('administrator/charts/', charts, name='dashboard'),
+    path('administrator/inventory-request/', inventory_request, name='invetory_request'),
+    path('administrator/inventory-items/',
+         inventory_items, name='invetory_items'),
+    path('administrator/inventory-received/',
+         inventory_received, name='inventory_received'),
+    path('administrator/inventory-report/',
+         inventory_report, name='invetory_request'),
+    path('administrator/admitted-patient/',
+         admitted_patient, name='admitted_patient'),
     path('administrator/outpatient/patient/',
          outpatient_patient, name='outpatient_patient'),
     path('administrator/report/', report, name='report'),

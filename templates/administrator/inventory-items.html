@@ -1,0 +1,433 @@
+{% extends 'administrator/base.html' %} {% block title %}
+<title>
+    Sample homepage
+</title>
+
+{% endblock %} {% block content %}
+
+<!-- Sidenav -->
+{% include 'administrator/nav-bar.html' %}
+<!-- Main content -->
+<div class="main-content" id="panel">
+    <!-- Topnav -->
+    {% include 'administrator/top-nav-bar.html' %}
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header pb-6">
+        <div class="container-fluid">
+            <div class="header-body">
+                <div class="row align-items-center py-4">
+                    <div class="col-lg-6 col-7">
+                        <h6 class="h2 d-inline-block mb-0">Inventory Items</h6>
+                        <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                            <ol class="breadcrumb breadcrumb-links">
+                                <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="/">Dashboards</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Inventory Items</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- <div class="col-lg-6 col-5 text-right">
+                        <a href="#" class="btn btn-sm btn-neutral">New</a>
+                        <a href="#" class="btn btn-sm btn-neutral">Filters</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+        <div class="panel-body">
+            <div id="ember3390" class="panel panel-primary ember-view">
+                <table class="table">
+                    <tr class="table-header">
+                        <th id="ember3402" class="sortable-column ember-view"><span data-ember-action="" data-ember-action-3403="3403">
+    <span class="octicon octicon-triangle-down inactive"></span> Id
+                            </span>
+                            <!---->
+                        </th>
+                        <th id="ember3404" class="sortable-column ember-view"><span data-ember-action="" data-ember-action-3405="3405">
+    <span class="octicon octicon-triangle-down inactive"></span> Name
+                            </span>
+                            <!---->
+                        </th>
+                        <th id="ember3406" class="sortable-column ember-view"><span data-ember-action="" data-ember-action-3407="3407">
+    <span class="octicon octicon-triangle-down inactive"></span> Type
+                            </span>
+                            <!---->
+                        </th>
+                        <th id="ember3408" class="sortable-column ember-view"><span data-ember-action="" data-ember-action-3409="3409">
+    <span class="octicon octicon-triangle-down inactive"></span> Quantity
+                            </span>
+                            <!---->
+                        </th>
+                        <th>Location</th>
+                        <th id="ember3410" class="sortable-column ember-view"><span data-ember-action="" data-ember-action-3411="3411">
+    <span class="octicon octicon-triangle-down inactive"></span>
+                            </span>
+                            <!---->
+                        </th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3413="3413">
+                        <td>m00545</td>
+                        <td>Aspirin</td>
+                        <td>Medication</td>
+                        <td>2628 capsule</td>
+                        <td>Sangli : 2 lane</td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3420="3420">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3421="3421">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3422="3422"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/kcc0etk9_dw" id="ember3423" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3441="3441">
+                        <td>m00592</td>
+                        <td>AThuốc hormone nữ siêu mạnh</td>
+                        <td>Medication</td>
+                        <td>50 pill</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3445="3445">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3446="3446">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3447="3447"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/kpf9s2uj_fs" id="ember3448" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3450="3450">
+                        <td>m00084</td>
+                        <td>Ativan</td>
+                        <td>Medication</td>
+                        <td>733 tablet</td>
+                        <td>Portugal,ETH : A7,3</td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3460="3460">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3461="3461">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3462="3462"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k70rteoi_ra" id="ember3463" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3465="3465">
+                        <td>m00435</td>
+                        <td>Atorvastatin</td>
+                        <td>Medication</td>
+                        <td>56 plastic</td>
+                        <td>Gabon, <br> Suite 434 7315 Kozey Port,</td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3484="3484">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3485="3485">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3486="3486"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k70uc35k_r6" id="ember3487" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3489="3489">
+                        <td>m00417</td>
+                        <td>Atripla</td>
+                        <td>Medication</td>
+                        <td>183 suspension</td>
+                        <td>Mexico,<br>Apt. 204 282 Bayer<br> Prairie</td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3505="3505">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3506="3506">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3507="3507"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k70u8chw_js" id="ember3508" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3510="3510">
+                        <td>m00126</td>
+                        <td>Avelox</td>
+                        <td>Medication</td>
+                        <td>96 spray</td>
+                        <td>Italy,11 : 11,<br>Talathi colony<br> urun-islampur : Government<br> Hospital Near Talathi</td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3520="3520">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3521="3521">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3522="3522"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k70s0zi4_kv" id="ember3523" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3525="3525">
+                        <td></td>
+                        <td>AZ1</td>
+                        <td>Medication</td>
+                        <td>2000 set</td>
+                        <td>Thai : B</td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3529="3529">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3530="3530">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3531="3531"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/ktlae573_p9" id="ember3532" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3534="3534">
+                        <td>m00488</td>
+                        <td>Azelaic acid</td>
+                        <td>Medication</td>
+                        <td>396 suspension</td>
+                        <td>Belize,<br>219 Mike Glens,<br> South Loydtown</td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3553="3553">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3554="3554">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3555="3555"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k70umdj1_kc" id="ember3556" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3558="3558">
+                        <td>m00173</td>
+                        <td>Azithromycin</td>
+                        <td>Medication</td>
+                        <td>0 pallet</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3562="3562">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3563="3563">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3564="3564"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k70syw24_9r" id="ember3565" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3567="3567">
+                        <td>m00605</td>
+                        <td>Azithromycin</td>
+                        <td>Medication</td>
+                        <td>2000 capsule</td>
+                        <td>KARAD : BUS-STand</td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3571="3571">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3572="3572">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3573="3573"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/ktzfh8ar_ob" id="ember3574" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3576="3576">
+                        <td>m00200</td>
+                        <td>Belviq</td>
+                        <td>Medication</td>
+                        <td>171 nebule</td>
+                        <td>Burkina Faso</td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3580="3580">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3581="3581">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3582="3582"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k70t3tiw_1u" id="ember3583" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3585="3585">
+                        <td>m00235</td>
+                        <td>Belviq</td>
+                        <td>Medication</td>
+                        <td>146 container</td>
+                        <td>Turkmenistan</td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3589="3589">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3590="3590">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3591="3591"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k70ta9c0_qh" id="ember3592" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3594="3594">
+                        <td>m00407</td>
+                        <td>Benzonatate</td>
+                        <td>Medication</td>
+                        <td>145 syrup</td>
+                        <td>Myanmar,<br>Suite 096 94584<br> Kirlin Rest</td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3613="3613">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3614="3614">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3615="3615"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k70u6i3y_be" id="ember3616" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3618="3618">
+                        <td>m00366</td>
+                        <td>Benzoyl peroxide / clindamycin</td>
+                        <td>Medication</td>
+                        <td>33 vial</td>
+                        <td>6048 Graham Knolls<br>, South Chuckport</td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3634="3634">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3635="3635">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3636="3636"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k70tye7v_q5" id="ember3637" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3639="3639">
+                        <td>m00474</td>
+                        <td>Benzoyl peroxide / erythromycin</td>
+                        <td>Medication</td>
+                        <td>287 cream</td>
+                        <td>Lao People's <br>Democratic Republic,<br>356 Armstrong Plaza<br> shanunagar
+                        </td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3655="3655">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3656="3656">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3657="3657"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k70ujq90_hb" id="ember3658" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3660="3660">
+                        <td>m00240</td>
+                        <td>Benzphetamine</td>
+                        <td>Medication</td>
+                        <td>7 pcs</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3664="3664">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3665="3665">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3666="3666"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k70tb5tu_g2" id="ember3667" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3669="3669">
+                        <td>m00444</td>
+                        <td>Bevacizumab</td>
+                        <td>Medication</td>
+                        <td>214 case</td>
+                        <td>Syrian Arab<br> Republic,Pharmacy<br>,Apt. 469 90998 <br>Fadel Pine-5719</td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3691="3691">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3692="3692">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3693="3693"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k70ue4ph_2h" id="ember3694" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3696="3696">
+                        <td></td>
+                        <td>BEXSERO {SKIEPAS}</td>
+                        <td>Medication</td>
+                        <td>0 container</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3703="3703">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3704="3704">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3705="3705"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/koixf1ck_on" id="ember3706" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3708="3708">
+                        <td>m00399</td>
+                        <td>Biaxin</td>
+                        <td>Medication</td>
+                        <td>95 tray</td>
+                        <td>Sudan,<br>6252 Izola Landing,<br> New Stewartside</td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3721="3721">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3722="3722">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3723="3723"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k70u4ukx_fk" id="ember3724" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3726="3726">
+                        <td></td>
+                        <td>Biogesic</td>
+                        <td>Medication</td>
+                        <td>0 pill</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3730="3730">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3731="3731">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3732="3732"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k9c5tz7t_o4" id="ember3733" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3735="3735">
+                        <td>m00002</td>
+                        <td>Bisacodyl</td>
+                        <td>Medication</td>
+                        <td>0 roll</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3742="3742">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3743="3743">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3744="3744"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k70rezzg_dx" id="ember3745" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3747="3747">
+                        <td>m00432</td>
+                        <td>Blisovi 24 Fe</td>
+                        <td>Medication</td>
+                        <td>124 suppository</td>
+                        <td>Hungary,<br>2445 Rowe Alley
+                        </td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3766="3766">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3767="3767">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3768="3768"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k70ubjau_ju" id="ember3769" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3771="3771">
+                        <td></td>
+                        <td>Boska</td>
+                        <td>Medication</td>
+                        <td>300 tablet</td>
+                        <td>Cambodia : PP</td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3775="3775">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3776="3776">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3777="3777"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/khn7gg3n_nr" id="ember3778" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3780="3780">
+                        <td>m00509</td>
+                        <td>BUKU ICV</td>
+                        <td>Medication</td>
+                        <td>900 box</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3784="3784">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3785="3785">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3786="3786"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k7banmmp_50" id="ember3787" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                    <tr class="clickable" data-ember-action="" data-ember-action-3789="3789">
+                        <td>m00175</td>
+                        <td>Buprenorphine / naloxone</td>
+                        <td>Medication</td>
+                        <td>563 gel</td>
+                        <td>Namibia</td>
+                        <td></td>
+                        <td>
+                            <button class="btn btn-primary" data-ember-action="" data-ember-action-3796="3796">Add</button>
+                            <button class="btn btn-default neutral" data-ember-action="" data-ember-action-3797="3797">Edit</button>
+                            <button class="btn btn-default warning" data-ember-action="" data-ember-action-3798="3798"><span class="octicon octicon-x"></span> Delete</button>
+                            <a href="#/inventory/barcode/k70sz8r2_6f" id="ember3799" class="btn btn-default neutral ember-view">Barcode</a>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <!-- Footer -->
+        {% include 'administrator/footer.html' %}
+    </div>
+</div>
+<!-- Argon Scripts -->
+{% include 'administrator/footer-script.html' %} {% endblock %}

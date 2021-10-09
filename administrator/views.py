@@ -177,3 +177,19 @@ def history_incident(request, *args, **kwargs):
 
 def report_incident(request, *args, **kwargs):
     return render(request, 'administrator/report-incident.html', {})
+
+
+def charts(request, *args, **kwargs):
+    return render(request, 'administrator/charts.html', {})
+
+def inventory_request(request, *args, **kwargs):
+    return render(request, 'administrator/inventory-request.html', {})
+
+def inventory_items(request, *args, **kwargs):
+    return render(request, 'administrator/inventory-items.html', {})
+
+def inventory_received(request, *args, **kwargs):
+    return render(request, 'administrator/inventory-received.html', {})
+
+def inventory_report(request, *args, **kwargs):
+    return render(request, 'administrator/inventory-report.html', {})
