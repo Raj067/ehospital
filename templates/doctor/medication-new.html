@@ -46,7 +46,7 @@
                     <div class="card-header">
                         <div class="row align-items-center">
                             <div class="col-8">
-                                <h3 class="mb-0">Send Complaints to Administration</h3>
+                                <h3 class="mb-0">New Medication Request</h3>
                             </div>
                             <!-- <div class="col-4 text-right">
                                 <a href="#!" class="btn btn-sm btn-primary">Settings</a>
@@ -57,16 +57,37 @@
                         <form>
                             <div class="pl-lg-4">
                                 <div class="form-group">
-                                    <label class="form-control-label">Complaints</label>
-                                    <textarea rows="4" class="form-control" placeholder="Complaints"></textarea>
+                                    <label class="form-control-label">Patient Name</label>
+                                    <input class="form-control" placeholder="Patient Name" required>
                                 </div>
                                 <div class="form-group">
-                                    <label class="form-control-label" for="exampleFormControlSelect1">Select the kind of complaint</label>
+                                    <label class="form-control-label">Medication</label>
+                                    <input class="form-control" placeholder="Medication" required>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-first-name">Quantity</label>
+                                            <input type="text" id="input-first-name" class="form-control" placeholder="First name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-last-name">Refills</label>
+                                            <input type="text" id="input-last-name" class="form-control" placeholder="Last name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label">Prescription </label>
+                                    <textarea rows="4" class="form-control" placeholder="Prescription "></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label" for="exampleFormControlSelect1">Visit</label>
                                     <select class="form-control" id="exampleFormControlSelect1" required>
                                     <option value="">------</option>
-                                    <option value="m">From visitors</option>
-                                    <option value="f">From patients</option>
-                                    <option value="f">From employee</option>
+                                    <option value="m">Add New Outpatient Visit</option>
+
                                 </select>
                                 </div>
                             </div>

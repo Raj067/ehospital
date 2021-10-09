@@ -34,3 +34,4 @@ doctor_urls = [
     path('doctor/report-incident/', report_incident, name='report_incident'),
     path('doctor/history-incident/', history_incident, name='history_incident'),
 ]
+ 

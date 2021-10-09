@@ -1,4 +1,4 @@
-{% extends 'nurse/base.html' %} {% block title %}
+{% extends 'doctor/base.html' %} {% block title %}
 <title>
     Sample homepage
 </title>
@@ -6,11 +6,11 @@
 {% endblock %} {% block content %}
 
 <!-- Sidenav -->
-{% include 'nurse/nav-bar.html' %}
+{% include 'doctor/nav-bar.html' %}
 <!-- Main content -->
 <div class="main-content" id="panel">
     <!-- Topnav -->
-    {% include 'nurse/top-nav-bar.html' %}
+    {% include 'doctor/top-nav-bar.html' %}
     <!-- Header -->
     <!-- Header -->
     <div class="header pb-6">
@@ -54,6 +54,7 @@
                         </div>
                     </div>
                     <div class="card-body">
+
                         <form>
                             <div class="pl-lg-4">
                                 <div class="form-group">
@@ -69,7 +70,7 @@
                                     </select>
                                 </div>
                                 <label class="form-control-label">Date</label>
-                                <div class="input-daterange datepicker row align-items-center">
+                                <div class="row">
 
                                     <div class="col">
                                         <div class="form-group">
@@ -128,8 +129,8 @@
             </div>
         </div>
         <!-- Footer -->
-        {% include 'nurse/footer.html' %}
+        {% include 'doctor/footer.html' %}
     </div>
 </div>
 <!-- Argon Scripts -->
-{% include 'nurse/footer-script.html' %} {% endblock %}
+{% include 'doctor/footer-script.html' %} {% endblock %}

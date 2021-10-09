@@ -1,0 +1,58 @@
+{% extends 'doctor/base.html' %} {% block title %}
+<title>
+    Sample homepage
+</title>
+
+{% endblock %} {% block content %}
+
+<!-- Sidenav -->
+{% include 'doctor/nav-bar.html' %}
+<!-- Main content -->
+<div class="main-content" id="panel">
+    <!-- Topnav -->
+    {% include 'doctor/top-nav-bar.html' %}
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header pb-6">
+        <div class="container-fluid">
+            <div class="header-body">
+                <div class="row align-items-center py-4">
+                    <div class="col-lg-6 col-7">
+                        <h6 class="h2 d-inline-block mb-0">Imaging Requests</h6>
+                        <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                            <ol class="breadcrumb breadcrumb-links">
+                                <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="/">Dashboards</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Imaging Requests</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-lg-6 col-5 text-right">
+                        <a href="#" class="btn btn-sm btn-neutral">New</a>
+                        <a href="#" class="btn btn-sm btn-neutral">Filters</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+        <div class="panel-body">
+            <div id="ember9375" class="panel panel-primary ember-view">
+                <table class="table">
+                    <tr class="table-header">
+                        <th class="col-xs-2">Date Requested</th>
+                        <th class="col-xs-2">Requested By</th>
+                        <th class="col-xs-2">Patient</th>
+                        <th class="col-xs-2">Imaging Type</th>
+                        <th class="col-xs-2">Notes</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Footer -->
+        {% include 'doctor/footer.html' %}
+    </div>
+</div>
+<!-- Argon Scripts -->
+{% include 'doctor/footer-script.html' %} {% endblock %}
