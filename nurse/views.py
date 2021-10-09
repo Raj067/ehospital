@@ -12,6 +12,7 @@ def dashboard(request, *args, **kwargs):
     }
     return render(request, 'nurse/home.html', data)
 
+
 def all_schedule(request, *args, **kwargs):
     users = [
         ['I0001', 'Rajabu Mrisho', 'Male', 43, 'Normal', '23/56'],
