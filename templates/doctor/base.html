@@ -45,7 +45,22 @@
 </head>
 
 <body>
-
+    <style>
+        nav div div div ul li a:hover {
+            background-color: #f6f9fc;
+        }
+        
+        nav div div div ul li .nav-item {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        nav div div div ul li .active {
+            margin-left: 0px!important;
+            margin-right: 0px!important;
+            border-radius: 0px!important;
+        }
+    </style>
     {% block content %} {% endblock %}
 </body>
 
