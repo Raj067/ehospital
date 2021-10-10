@@ -8,15 +8,15 @@ def home(request, *args, **kwargs):
     if request.method == 'POST':
         email = request.POST.get('email')
         password = request.POST.get('password')
-        if email in ['admin.demo@hospitalini.com', 'office.demo@hospitalini.com',
-                     'doctor.demo@hospitalini.com', 'nurse.demo@hospitalini.com']:
-            if email == 'admin.demo@hospitalini.com':
+        if email in ['admin.demo@hmis.com', 'office.demo@hmis.com',
+                     'doctor.demo@hmis.com', 'nurse.demo@hmis.com']:
+            if email == 'admin.demo@hmis.com':
                 return redirect('/administrator/')
-            elif email == 'office.demo@hospitalini.com':
+            elif email == 'office.demo@hmis.com':
                 return redirect('/accounting/')
-            elif email == 'doctor.demo@hospitalini.com':
+            elif email == 'doctor.demo@hmis.com':
                 return redirect('/doctor/')
-            elif email == 'nurse.demo@hospitalini.com':
+            elif email == 'nurse.demo@hmis.com':
                 return redirect('/nurse/')
         else:
             txt = 'Invalid username or password'
