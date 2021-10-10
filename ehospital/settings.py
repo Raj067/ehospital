@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-jc&1xrlgyzc+35yz%y%ufd)8g=o62i!50a!&gg+&7m#=_j+e92
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '127.0.0.1', 'https://hospitalini.herokuapp.com', 'hospitalini.herokuapp.com']
+    '127.0.0.1', 'https://hmis-demo.herokuapp.com', 'hmis-demo.herokuapp.com']
 
 
 # Application definition
