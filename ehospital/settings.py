@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-jc&1xrlgyzc+35yz%y%ufd)8g=o62i!50a!&gg+&7m#=_j+e92
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '127.0.0.1', 'www.ehospital-minfoxy.herokuapp.com/', 'https://ehospital-minfoxy.herokuapp.com/', 'ehospital-minfoxy.herokuapp.com/']
+    'ehospital-minfoxy.herokuapp.com', 'www.ehospital-minfoxy.herokuapp.com/', 'https://ehospital-minfoxy.herokuapp.com/']
 
 
 # Application definition
