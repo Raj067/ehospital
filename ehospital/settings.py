@@ -25,8 +25,11 @@ SECRET_KEY = 'django-insecure-jc&1xrlgyzc+35yz%y%ufd)8g=o62i!50a!&gg+&7m#=_j+e92
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'ehospital-minfoxy.herokuapp.com', 'www.ehospital-minfoxy.herokuapp.com/', 'https://ehospital-minfoxy.herokuapp.com/']
+ALLOWED_HOSTS = ['*']
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:3000', 'https://raj067-laughing-potato-rxgjqp65xqvhx74-8000.preview.app.github.dev',
+]
 
 
 # Application definition
@@ -52,7 +55,8 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
